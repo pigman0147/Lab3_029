@@ -29,32 +29,40 @@ class Firstpage extends StatelessWidget {
           CircleAvatar(
               radius: 70.0, backgroundImage: AssetImage("assets/profile1.jpg")),
           Text("12 ธ.ค 2024 โดย อาบังอินเดีย"),
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-              Icon(
-                Icons.access_alarm,
-                color: Colors.pink,
-                size: 24.0,
-                semanticLabel: 'Text to announce in accessibility modes',
+            children: [
+              Column(
+                children: [
+                  Icon(Icons.timer),
+                  Text("เวลาเตรียม"),
+                  Text("15 นาที"),
+                ],
               ),
-              Icon(
-                Icons.cookie,
-                color: Colors.green,
-                size: 30.0,
+              Column(
+                children: [
+                  Icon(Icons.restart_alt_rounded),
+                  Text("เวลาปรุง"),
+                  Text("20 นาที"),
+                ],
               ),
-              Icon(
-                Icons.fastfood,
-                color: Colors.blue,
-                size: 36.0,
+              Column(
+                children: [
+                  Icon(Icons.fire_hydrant),
+                  Text("แคลอรี่"),
+                  Text("300 kcal"),
+                ],
               ),
-              Icon(
-                Icons.food_bank,
-                color: Colors.blue,
-                size: 36.0,
+              Column(
+                children: [
+                  Icon(Icons.face),
+                  Text("สำหรับ"),
+                  Text("1 เสิร์ฟ"),
+                ],
               ),
             ],
-          )
+          ),
+          Text("ใครคิดว่า “ออมเลตชีส” ทำยาก เห็นสูตรนี้ต้องเปลี่ยนใจแล้ว! อีกหนึ่งเมนูไข่ทำง่าย ๆ อารมณ์ดี๊ดี ไว้สำหรับเป็นอาหารเช้าในวันสบาย ๆ ที่อยากทำอาหารเช้ากินเอง หรือจะทำให้เด็ก ๆ กินก็ได้นะ รับรองว่าเป็นที่ถูกอกถูกใจแน่นอน เพราะมีทั้งไข่ออมเลตนุ่ม ๆ และชีสสุดยืดด ของโปรด ถ้าพร้อมแล้วไปเข้าครัวดูวิธีทำออมเลตกันเลย"),
         ],
       ),
     );
